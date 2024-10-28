@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  ad-service:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_NAME: adsdb
+      DB_HOST: host.docker.internal  # Using host.docker.internal to connect to the local PostgreSQL
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: adsdb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"

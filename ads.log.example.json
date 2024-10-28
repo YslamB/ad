@@ -1,0 +1,7 @@
+
+{"level":"info","msg":"Starting the ad service","time":"2024-10-28T12:25:01+05:00"}
+{"level":"info","msg":"no rows in result set","time":"2024-10-28T12:25:03+05:00"}
+{"level":"info","msg":"Shutting down server...","time":"2024-10-28T12:25:29+05:00"}
+{"level":"info","msg":"Starting the ad service","time":"2024-10-28T12:25:33+05:00"}
+{"level":"info","msg":"no rows in result set","time":"2024-10-28T12:25:34+05:00"}
+{"level":"error","msg":"scany: query multiple result rows","time":"2024-10-28T11:34:45+05:00"}
